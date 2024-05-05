@@ -7,7 +7,7 @@ variable "admin_group" {
 variable "target_region" {
   description = "Define the target region for the deployment."
   type        = string
-  default     = "us-east-1"
+  default     = "eu-north-1"
 }
 
 

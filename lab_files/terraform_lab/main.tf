@@ -10,7 +10,7 @@ terraform {
 
 provider "aws" {
   profile = "default"
-  region  = "us-east-1"
+  region  = "eu-north-1"
 }
 
 resource "aws_instance" "fin-mobile-frontend" {
@@ -18,8 +18,8 @@ resource "aws_instance" "fin-mobile-frontend" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "Finance_Front_End",
-    Cost_Center = var.cost_center,
+    Name          = "Finance_Mobile_Front_End",
+    Cost_Center   = var.cost_center,
     Admin_Contact = var.admin_group
   }
 }
